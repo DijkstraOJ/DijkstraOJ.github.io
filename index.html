@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6559ce" />
+    <meta
+      name="description"
+      content="问径，编程学习由每一步组成。从 C++ 基础到算法思维，让学习有方向，让每一次思考都有向前的路。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="问径 · 一步一步，写出自己的答案" />
+    <meta
+      property="og:description"
+      content="从第一行代码，到独立解决问题。认识问径，让编程学习有迹可循。"
+    />
+    <meta property="og:image" content="./assets/social-cover.svg" />
+    <title>问径 · 一步一步，写出自己的答案</title>
+    <link rel="icon" href="./assets/brand-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <svg
+      class="icon-definitions"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-book" viewBox="0 0 24 24">
+          <path
+            d="M12 5.5C9 3.5 5 3.5 3 4.5v15c3-1 6-1 9 1 3-2 6-2 9-1v-15c-2-1-6-1-9 1Zm0 0v15"
+          />
+        </symbol>
+        <symbol id="icon-code" viewBox="0 0 24 24">
+          <path d="m7 7-5 5 5 5m10-10 5 5-5 5M14 4l-4 16" />
+        </symbol>
+        <symbol id="icon-route" viewBox="0 0 24 24">
+          <circle cx="6" cy="5" r="2" />
+          <circle cx="18" cy="19" r="2" />
+          <path d="M8 5h8a4 4 0 0 1 0 8H8a4 4 0 0 0 0 8h8" />
+        </symbol>
+        <symbol id="icon-flag" viewBox="0 0 24 24">
+          <path d="M5 21V3m0 1c4-3 7 3 14 0v10c-7 3-10-3-14 0" />
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6" />
+        </symbol>
+        <symbol id="icon-grid" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="6" height="6" rx="1" />
+          <rect x="15" y="3" width="6" height="6" rx="1" />
+          <rect x="3" y="15" width="6" height="6" rx="1" />
+          <rect x="15" y="15" width="6" height="6" rx="1" />
+        </symbol>
+        <symbol id="icon-users" viewBox="0 0 24 24">
+          <circle cx="9" cy="8" r="3" />
+          <path
+            d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m3 10v-3a6 6 0 0 0-3-5"
+          />
+        </symbol>
+        <symbol id="icon-spark" viewBox="0 0 24 24">
+          <path
+            d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#" aria-label="问径首页">
+          <img src="./assets/brand-mark.svg" width="37" height="37" alt="" />
+          <span>问径</span>
+          <span class="brand-divider"></span>
+          <span class="brand-caption">让学习有迹可循</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="打开导航"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="主导航">
+          <a href="#about">认识问径</a>
+          <a href="#path">千阶计划</a>
+          <a href="#experience">学习体验</a>
+          <a href="#faq">常见问题</a>
+          <a href="#start" class="nav-cta"
+            >开启探索
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-arrow" /></svg
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span> 给每一个认真思考的你
+          </p>
+          <h1 id="hero-title">
+            一步一步，<br />写出自己的<span class="answer-word"
+              >答案<svg viewBox="0 0 210 15" aria-hidden="true">
+                <path d="M3 11C55 0 150 0 205 8" /></svg></span
+            >。
+          </h1>
+          <p class="hero-description">
+            从第一行代码，到独立解决问题。<br />问径将知识、练习与探索连成一条路，<br
+              class="desktop-break"
+            />让编程学习的每一步，都有方向。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#path"
+              >探索千阶计划
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-arrow" /></svg
+            ></a>
+            <a class="button button-text" href="#about"
+              >认识问径 <span class="small-arrow">↗</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-rule"></span><span>保持好奇，循径而行。</span
+            ><span class="note-code">&lt;hello, world /&gt;</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="千阶计划学习路线界面示意">
+          <div class="visual-halo"></div>
+          <span class="floating-code" aria-hidden="true">{ }</span>
+          <div class="map-window">
+            <div class="window-bar">
+              <span class="window-dots"><i></i><i></i><i></i></span
+              ><span>问径 / 学习空间</span
+              ><span class="preview-label">界面示意</span>
+            </div>
+            <div class="map-window-body">
+              <div class="mini-rail" aria-hidden="true">
+                <img
+                  src="./assets/brand-mark.svg"
+                  width="26"
+                  height="26"
+                  alt=""
+                /><svg
+                  class="icon rail-active"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-route" /></svg
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-code" /></svg
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-flag" />
+                </svg>
+              </div>
+              <div class="map-main">
+                <div class="map-heading">
+                  <div>
+                    <span class="tiny-label">THOUSAND STEPS</span>
+                    <h2>千阶计划</h2>
+                  </div>
+                  <span class="map-subject">C++ 探索之路</span>
+                </div>
+                <div class="map-canvas">
+                  <div class="terrain terrain-one"></div>
+                  <div class="terrain terrain-two"></div>
+                  <div class="terrain terrain-three"></div>
+                  <span class="terrain-label">起步之原</span>
+                  <svg
+                    class="map-line"
+                    viewBox="0 0 440 300"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      class="map-line-base"
+                      d="M75 236C75 183 219 252 219 195S100 171 109 116 315 153 315 92 365 70 365 35"
+                    />
+                    <path
+                      class="map-line-accent"
+                      d="M75 236C75 183 219 252 219 195S100 171 109 116"
+                    />
+                  </svg>
+                  <div class="map-node node-one">
+                    <span class="node-icon">&lt;/&gt;</span
+                    ><span>输入输出</span>
+                  </div>
+                  <div class="map-node node-two">
+                    <span class="node-icon">x</span><span>变量与运算</span>
+                  </div>
+                  <div class="map-node node-three">
+                    <span class="node-icon">↻</span><span>循环入门</span>
+                  </div>
+                  <div class="map-node node-four">
+                    <span class="node-icon">[ ]</span><span>数组与字符串</span>
+                  </div>
+                  <div class="map-node node-five">
+                    <span class="node-icon">⌘</span><span>算法探索</span>
+                  </div>
+                  <span class="map-spark spark-one" aria-hidden="true">✦</span
+                  ><span class="map-spark spark-two" aria-hidden="true">+</span>
+                  <div class="map-detail">
+                    <span class="detail-tag">一个知识点，一次新发现</span
+                    ><strong>在实践中，理解循环。</strong
+                    ><span class="detail-line"></span
+                    ><span class="detail-line short"></span
+                    ><span class="detail-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </div>
+                <div class="map-bottom">
+                  <span><span class="mini-dot"></span> 学习由每一步组成</span
+                  ><span>向前一步 <span aria-hidden="true">↗</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note">
+            <span class="note-symbol" aria-hidden="true">✦</span>
+            <div>
+              <strong>学会编程，也学会思考。</strong
+              ><span>每一个小问题，都是新的起点。</span>
+            </div>
+          </div>
+          <span class="visual-caption">学习路径视觉示意</span>
+        </div>
+      </section>
+
+      <div class="capability-strip container" aria-label="问径的学习方式">
+        <a href="#path"
+          ><span class="capability-icon lavender"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-route" /></svg></span
+          ><span><strong>循径学习</strong><small>把知识连成路线</small></span
+          ><svg
+            class="icon capability-arrow"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="#icon-arrow" /></svg
+        ></a>
+        <a href="#experience"
+          ><span class="capability-icon mint"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-code" /></svg></span
+          ><span><strong>动手实践</strong><small>把思路写成代码</small></span
+          ><svg
+            class="icon capability-arrow"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="#icon-arrow" /></svg
+        ></a>
+        <a href="#experience"
+          ><span class="capability-icon peach"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-flag" /></svg></span
+          ><span><strong>迎接挑战</strong><small>在练习中拓展边界</small></span
+          ><svg
+            class="icon capability-arrow"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="#icon-arrow" /></svg
+        ></a>
+        <a href="#everyone"
+          ><span class="capability-icon blue"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-users" /></svg></span
+          ><span><strong>共同成长</strong><small>连接学习与教学</small></span
+          ><svg
+            class="icon capability-arrow"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="#icon-arrow" /></svg
+        ></a>
+      </div>
+
+      <section
+        id="about"
+        class="about-section section container"
+        aria-labelledby="about-title"
+      >
+        <div class="section-heading reveal">
+          <p class="section-kicker">01 / 认识问径</p>
+          <h2 id="about-title">好的学习，<br />从一个好问题开始。</h2>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lead">
+            编程的乐趣，不止于让程序运行。<br />更在于发现问题、拆解问题，<br />再亲手找到答案。
+          </p>
+          <p>
+            问径是面向青少年编程学习者的学习平台。我们从 C++
+            基础出发，将知识讲解、动手练习与算法探索放在同一个学习空间，让好奇心有去处，让努力有方向。
+          </p>
+          <div class="about-signature">
+            <img
+              src="./assets/brand-mark.svg"
+              width="29"
+              height="29"
+              alt=""
+            /><span>问，是好奇的开始。径，是成长的方向。</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="path"
+        class="path-section section"
+        aria-labelledby="path-title"
+      >
+        <div class="container">
+          <div class="path-intro reveal">
+            <div>
+              <p class="section-kicker">02 / 千阶计划</p>
+              <h2 id="path-title">
+                每一步很小，<br />走下去就是<span class="text-purple">成长</span
+                >。
+              </h2>
+            </div>
+            <div class="path-intro-copy">
+              <span class="pill"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-route" />
+                </svg>
+                一条看得见的学习路线</span
+              >
+              <p>
+                不用急着抵达终点。把一个个知识点连成路径，从基础开始，在理解与实践之间稳步前进。
+              </p>
+            </div>
+          </div>
+          <ol class="learning-path reveal" aria-label="C++ 学习方向示意">
+            <li class="path-step">
+              <span class="step-number">01</span>
+              <div class="step-symbol lavender">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-code" />
+                </svg>
+              </div>
+              <span class="step-label">建立基础</span>
+              <h3>让代码开口说话</h3>
+              <p>从输入输出、变量与运算开始，认识程序的基本表达方式。</p>
+              <div class="topic-tags">
+                <span>输入输出</span><span>变量与运算</span>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="step-number">02</span>
+              <div class="step-symbol mint">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-route" />
+                </svg>
+              </div>
+              <span class="step-label">学会组织</span>
+              <h3>让思路有条有理</h3>
+              <p>用条件与循环组织逻辑，用数组与字符串处理更多信息。</p>
+              <div class="topic-tags">
+                <span>条件与循环</span><span>数组与字符串</span>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="step-number">03</span>
+              <div class="step-symbol peach">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-grid" />
+                </svg>
+              </div>
+              <span class="step-label">拓展思维</span>
+              <h3>找到更好的办法</h3>
+              <p>走近数据结构与基础算法，练习拆解问题，比较不同的解法。</p>
+              <div class="topic-tags">
+                <span>数据结构</span><span>排序与搜索</span>
+              </div>
+            </li>
+            <li class="path-step">
+              <span class="step-number">04</span>
+              <div class="step-symbol blue">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-flag" />
+                </svg>
+              </div>
+              <span class="step-label">持续探索</span>
+              <h3>走向新的挑战</h3>
+              <p>从递归、图论到动态规划，让已有的知识在新问题中相遇。</p>
+              <div class="topic-tags">
+                <span>算法进阶</span><span>综合实践</span>
+              </div>
+            </li>
+          </ol>
+          <div class="path-footer">
+            <span
+              ><svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-spark" />
+              </svg>
+              学习不是跳到答案，而是走过思考的过程。</span
+            ><small>学习方向示意，具体路线以平台发布内容为准。</small>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="experience-section section container"
+        aria-labelledby="experience-title"
+      >
+        <div class="experience-copy reveal">
+          <p class="section-kicker">03 / 学习体验</p>
+          <h2 id="experience-title">从「我懂了」，<br />到「我做到了」。</h2>
+          <p class="section-description">
+            在一个连贯的学习空间里，读懂题意、实现思路、调试代码、回顾记录。让每一次尝试，都成为下一次进步的起点。
+          </p>
+          <ul class="experience-points">
+            <li>
+              <span class="point-number">01</span>
+              <div>
+                <h3>把注意力留给思考</h3>
+                <p>题目与代码并排呈现，减少来回切换，专注解决眼前的问题。</p>
+              </div>
+            </li>
+            <li>
+              <span class="point-number">02</span>
+              <div>
+                <h3>在尝试中找到线索</h3>
+                <p>通过输入输出和运行调试检验思路，逐步理解程序的行为。</p>
+              </div>
+            </li>
+            <li>
+              <span class="point-number">03</span>
+              <div>
+                <h3>让练习留下足迹</h3>
+                <p>回顾自己的提交与结果，看见解题过程，也看见思路的变化。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="editor-visual reveal"
+          aria-label="编程工作台界面示意，使用原创公开示例代码"
+        >
+          <div class="editor-window">
+            <div class="editor-topbar">
+              <div>
+                <img
+                  src="./assets/brand-mark.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                /><strong>编程工作台</strong>
+              </div>
+              <span class="preview-label">界面示意</span>
+            </div>
+            <div class="editor-body">
+              <div class="problem-pane">
+                <span class="problem-eyebrow">C++ / 输入与输出</span>
+                <h3>从两个数字开始</h3>
+                <p>读入两个整数，<br />输出它们的和。</p>
+                <div class="example-label">示例输入</div>
+                <pre>3 5</pre>
+                <div class="example-label">示例输出</div>
+                <pre>8</pre>
+                <span class="problem-tip"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-book" />
+                  </svg>
+                  先想清楚，再动手。</span
+                >
+              </div>
+              <div class="code-pane">
+                <div class="code-tab">
+                  <span><span class="file-dot"></span> main.cpp</span
+                  ><span>C++</span>
+                </div>
+                <div class="code-lines" aria-hidden="true">
+                  <span>1</span><span>2</span><span>3</span><span>4</span
+                  ><span>5</span><span>6</span><span>7</span><span>8</span
+                  ><span>9</span><span>10</span>
+                </div>
+                <pre
+                  class="source-code"
+                ><code><span class="syntax-purple">#include</span> <span class="syntax-green">&lt;iostream&gt;</span>
+
+<span class="syntax-purple">int</span> <span class="syntax-blue">main</span>() {
+    <span class="syntax-purple">int</span> a, b;
+    std::cin &gt;&gt; a &gt;&gt; b;
+    std::cout &lt;&lt; a + b
+              &lt;&lt; <span class="syntax-green">"\n"</span>;
+    <span class="syntax-purple">return</span> <span class="syntax-orange">0</span>;
+}
+</code></pre>
+                <div class="console">
+                  <div class="console-header">
+                    <span>输入 / 输出</span
+                    ><span class="console-label">示例结果</span>
+                  </div>
+                  <span class="console-prompt">&gt; <span>8</span></span>
+                </div>
+                <div class="editor-status">
+                  <span><span class="status-dot"></span> 从理解到实现</span
+                  ><span>UTF-8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="editor-caption">
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-check" /></svg
+            ><span>思路落在代码里，答案来自思考。</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="everyone"
+        class="everyone-section section"
+        aria-labelledby="everyone-title"
+      >
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="section-kicker">04 / 一起向前</p>
+            <h2 id="everyone-title">
+              不同的起点，<br class="mobile-break" />同样的探索精神。
+            </h2>
+            <p class="section-description">
+              一个人的钻研，一群人的成长。问径连接学习与教学。
+            </p>
+          </div>
+          <div class="audience-grid">
+            <article class="audience-card learner-card reveal">
+              <div class="audience-top">
+                <span class="audience-label">给学习者</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-code" />
+                </svg>
+              </div>
+              <h3>好奇，就是最好的起点。</h3>
+              <p>
+                刚接触
+                C++，或想让算法基础更扎实？从适合自己的知识点开始，用持续的练习，积累独立解决问题的能力。
+              </p>
+              <ul>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  从基础出发的学习指南
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  有方向的路径与实践
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  属于自己的学习记录
+                </li>
+              </ul>
+              <span class="audience-decoration" aria-hidden="true">{ }</span>
+            </article>
+            <article class="audience-card teacher-card reveal">
+              <div class="audience-top">
+                <span class="audience-label">给教学者</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-users" />
+                </svg>
+              </div>
+              <h3>把知识，连成成长的路。</h3>
+              <p>
+                围绕教学目标组织学习内容与练习路径，让讲解、实践和挑战相互衔接，为学生提供清晰的探索方向。
+              </p>
+              <ul>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  在组织空间管理内容
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  编排有序的练习路径
+                </li>
+                <li>
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-check" />
+                  </svg>
+                  通过比赛组织阶段挑战
+                </li>
+              </ul>
+              <span class="audience-decoration" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="faq"
+        class="faq-section section container"
+        aria-labelledby="faq-title"
+      >
+        <div class="faq-intro reveal">
+          <p class="section-kicker">05 / 常见问题</p>
+          <h2 id="faq-title">开始之前，<br />你可能想知道。</h2>
+          <p>关于问径的几个小问题。</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>
+              问径适合什么样的学习者？<span
+                class="faq-plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              问径面向对编程感兴趣的青少年，当前从 C++
+              基础学习与算法实践出发。无论是刚开始接触代码，还是希望继续巩固基础，都可以先了解学习方向，找到合适的起点。
+            </p>
+          </details>
+          <details>
+            <summary>
+              「千阶计划」是什么？<span
+                class="faq-plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              千阶计划是一种通过路线地图组织练习的学习方式。知识点沿路径展开，已发布路线中的练习按顺序推进，让下一步的目标更清楚。「千阶」表达持续积累的理念，并不代表已经上线一千道题目或一千个关卡。
+            </p>
+          </details>
+          <details>
+            <summary>
+              问径重视什么样的学习方式？<span
+                class="faq-plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              我们重视理解与实践的结合：读懂一个概念，尝试用代码表达，通过运行和反馈检查自己的想法，再回顾过程。比起一次得到答案，更希望学习者逐步形成自己的解题思路。
+            </p>
+          </details>
+          <details>
+            <summary>
+              需要有编程基础才能开始吗？<span
+                class="faq-plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              如果第一次接触
+              C++，可以先从输入输出、变量与运算这些基础概念了解起。已经有一定经验的学习者，可以对照学习方向补齐薄弱的知识点，再逐步走向更复杂的问题。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section
+        id="start"
+        class="start-section container"
+        aria-labelledby="start-title"
+      >
+        <div class="start-background" aria-hidden="true">
+          <svg viewBox="0 0 1200 350" preserveAspectRatio="none">
+            <path
+              d="M690 380C640 190 1050 380 1000 190S800 210 880 70 1120 160 1200-40"
+            />
+            <path
+              d="M760 380C710 190 1120 380 1070 190S870 210 950 70 1190 160 1270-40"
+            />
+          </svg>
+        </div>
+        <div class="start-copy">
+          <p class="start-kicker">每一步，都算数。</p>
+          <h2 id="start-title">带上好奇心，<br />下一程，一起走。</h2>
+          <p>答案不在远方，就在你向前的每一步里。</p>
+          <a class="button button-white" href="#path"
+            >发现你的学习方向
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-arrow" /></svg
+          ></a>
+        </div>
+        <div class="start-mark" aria-hidden="true">
+          <img
+            src="./assets/brand-mark.svg"
+            width="110"
+            height="110"
+            alt=""
+          /><span>HELLO, NEXT STEP.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#" aria-label="返回问径首页"
+          ><img
+            src="./assets/brand-mark.svg"
+            width="35"
+            height="35"
+            alt=""
+          /><span>问径</span></a
+        >
+        <p>问，是好奇的开始。径，是成长的方向。</p>
+        <nav aria-label="页脚导航">
+          <a href="#about">认识问径</a><a href="#path">千阶计划</a
+          ><a href="#faq">常见问题</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="copyright-year">2026</span> 问径 · Dijkstra</span
+        ><span
+          >一步一步，写出自己的答案。<span
+            class="footer-spark"
+            aria-hidden="true"
+            >✦</span
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
