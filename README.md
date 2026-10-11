@@ -26,9 +26,29 @@ python3 -m http.server 8080 --bind 127.0.0.1
 - `assets/brand-mark.svg`：沿用问径项目的品牌图形。
 - `assets/social-cover.svg`：品牌分享封面。
 - `.nojekyll`：供 GitHub Pages 直接服务静态文件。
+- `CNAME`：GitHub Pages 的自定义域名 `dijkstra.cn`。
 
 ## 发布
 
-文件按 GitHub Pages 仓库根目录布局准备。需要发布时，在 GitHub 仓库设置中的 Pages 选择目标分支和根目录 `/`。本次只交付本地文件，不包含提交、推送或上线操作。
+网站使用 GitHub Pages，从 `main` 分支的根目录 `/` 发布，主地址为 `https://dijkstra.cn/`。
 
-文案及展示图应与问径平台实际发布内容保持一致。如需兼容社交平台抓取分享图，可将 `social-cover.svg` 导出为 PNG，再修改 `og:image` 为实际发布后的绝对地址。
+### 自定义域名
+
+1. 提交并推送根目录的 `CNAME` 文件及页面修改，在仓库 [Settings → Pages](https://github.com/DijkstraOJ/DijkstraOJ.github.io/settings/pages) 确认 Custom domain 为 `dijkstra.cn`。先完成 GitHub 端绑定，再修改 DNS 解析。
+2. 在域名 DNS 控制台添加以下记录，TTL 使用平台默认值：
+
+   | 主机记录 | 类型 | 记录值 |
+   | --- | --- | --- |
+   | `@` | `A` | `185.199.108.153` |
+   | `@` | `A` | `185.199.109.153` |
+   | `@` | `A` | `185.199.110.153` |
+   | `@` | `A` | `185.199.111.153` |
+   | `www` | `CNAME` | `dijkstraoj.github.io` |
+
+   检查并替换 `@`、`www` 下与上述配置冲突的旧网站解析记录。保留邮件和其他子域名的记录。
+3. 等待 GitHub Pages 的 DNS 检查通过及 HTTPS 证书签发，再启用 Enforce HTTPS。`www.dijkstra.cn` 会自动跳转到主域名。
+4. 访问 `https://dijkstra.cn/`，确认页面和静态资源正常加载。
+
+DNS 记录与配置顺序见 [GitHub Pages 官方说明](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。
+
+文案及展示图应与问径平台实际发布内容保持一致。如需兼容社交平台抓取分享图，可将 `social-cover.svg` 导出为 PNG，再同步修改 `og:image`。
